@@ -1,0 +1,8 @@
+version: "3"
+services:
+  home_stay:
+    volumes:
+      - /app/node_modules
+    environment: 
+      - NODE_ENV=production
+    command: node server.js
