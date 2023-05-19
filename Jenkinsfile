@@ -1,10 +1,9 @@
-pipeline{
+pipeline {
     agent any
-
-    stages("Docker BUild"){
-        stage{
-            step{
-                sh "echo "Docker Build"  "
+    stages {
+        stage('build') {
+            steps {
+                sh 'echo "Hello"'
             }
         }
     }
